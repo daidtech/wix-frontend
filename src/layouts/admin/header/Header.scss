@@ -3,4 +3,16 @@
 .admin-header {
   background-color: #f8f8f8;
   height: $header_height;
+  .left-side {
+
+  }
+  .right-side {
+    .divide-break {
+      width: 1px;
+      height: 18px;
+      align-self: center;
+      background-color: red;
+      margin: 0 10px;
+    }
+  }
 }
