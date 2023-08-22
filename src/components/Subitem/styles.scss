@@ -1,0 +1,10 @@
+.subitem {
+  min-height: 32px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &-link {
+    width: 100%;
+  }
+}

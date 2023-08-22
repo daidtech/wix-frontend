@@ -1,0 +1,11 @@
+@import '../../../assets/common/variables.scss';
+
+.sidebar {
+  width: $sidebar_width;
+  height: calc(100vh - var($header_height));
+  color: white;
+  background-color: black;
+  .accordion-body {
+    padding: 0;
+  }
+}
