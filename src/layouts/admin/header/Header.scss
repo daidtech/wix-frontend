@@ -1,8 +1,9 @@
 @import '../../../assets/common/variables.scss';
 
 .admin-header {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   height: $header_height;
+  box-shadow: 0 1px 5px 0 rgba(41,85,115,0.21);
   .left-side {
 
   }
