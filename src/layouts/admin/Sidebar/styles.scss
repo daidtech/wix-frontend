@@ -2,10 +2,18 @@
 
 .sidebar {
   width: $sidebar_width;
-  height: calc(100vh - var($header_height));
+  height: calc(100vh - 48px);
   color: white;
   background-color: black;
-  .accordion-body {
-    padding: 0;
+  .accordion {
+    .accordion-item {
+      border-radius: 0;
+      .accordion-button {
+        border-radius: 0;
+      }
+    }
+    .accordion-body {
+      padding: 0;
+    }
   }
 }
