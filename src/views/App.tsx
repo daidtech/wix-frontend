@@ -2,13 +2,14 @@ import React from 'react';
 import './App.css';
 import Header from 'layouts/admin/header/Header';
 import Sidebar from 'layouts/admin/Sidebar';
+import Products from 'components/Products';
+import AdminLayout from 'layouts/admin';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Sidebar />
-    </div>
+    <AdminLayout>
+      <Products />
+    </AdminLayout>
   );
 }
 

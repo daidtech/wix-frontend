@@ -1,12 +1,12 @@
 import React from "react";
 import './styles.scss'
 
-interface SubitemProp {
+interface SubitemProps {
   link: string,
   children: string | JSX.Element | JSX.Element[],
 }
 
-function Subitem({link, children}: SubitemProp) {
+function Subitem({link, children}: SubitemProps) {
   return (
     <a href={link} className='subitem'>
       {children}

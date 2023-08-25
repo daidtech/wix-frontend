@@ -1,0 +1,11 @@
+@import 'assets/common/variables.scss';
+
+.admin-layout {
+  .content{
+    display: flex;
+    &-children {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
