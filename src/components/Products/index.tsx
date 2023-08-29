@@ -1,6 +1,7 @@
 import 'react-data-grid/lib/styles.css';
 import DataGrid from 'react-data-grid';
 import './styles.scss';
+import TitlePage from 'components/TitlePage';
 
 const columns = [
   { key: 'id', name: 'ID' },
@@ -13,7 +14,12 @@ const rows = [
 ];
 
 function Products() {
-  return <DataGrid columns={columns} rows={rows} />;
+  return (
+    <div>
+      <TitlePage></TitlePage>
+      <DataGrid columns={columns} rows={rows} />;
+    </div>
+  )
 }
 
 export default Products;
