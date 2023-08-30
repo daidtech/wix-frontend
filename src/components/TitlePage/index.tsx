@@ -3,7 +3,7 @@ import './styles.scss';
 
 function TitlePage() {
   return (
-      <Container className="title-page">
+      <Container fluid className="title-page">
         <Row className=''>
           <Col>
               <h1>Products <span>12</span></h1>

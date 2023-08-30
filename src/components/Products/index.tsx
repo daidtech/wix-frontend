@@ -15,9 +15,9 @@ const rows = [
 
 function Products() {
   return (
-    <div>
+    <div className='products-page'>
       <TitlePage></TitlePage>
-      <DataGrid columns={columns} rows={rows} />;
+      <DataGrid className='products-grid' columns={columns} rows={rows} />
     </div>
   )
 }
