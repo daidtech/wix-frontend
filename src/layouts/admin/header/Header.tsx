@@ -10,24 +10,48 @@ import {
   Row,
   Container,
   Dropdown,
-  DropdownButton
+  DropdownButton,
+  Badge
 } from 'react-bootstrap';
 
 function Header() {
   return (
     <header className='admin-header'>
-      <Container fluid>
-        <Row>
-          <Col align="start" className='left-side'>
-            <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid className='h-100'>
+        <Row className='h-100'>
+          <Col align="start" className='left-side h-100'>
+            <Navbar expand="lg" className="h-100">
               <Container>
-                <Navbar.Brand href="#home">Logo</Navbar.Brand>
+                <Navbar.Brand href="#home" className='fw-bold'>WIX</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Link</Nav.Link>
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                   <NavDropdown title="MySite" id="basic-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.1">MySite</NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        Site A
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">Site B</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action/3.4">
+                        Site C
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Explore" id="basic-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.1">
+                        App Market
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        Updates & Release
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">
+                        Inspiring Websites
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.4">
+                        Courses & Lessons
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                    <NavDropdown title="Help" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2">
                         Another action
@@ -38,15 +62,23 @@ function Header() {
                         Separated link
                       </NavDropdown.Item>
                     </NavDropdown>
+                    <div className="wrap-link px-3">
+                      <a href='#'>
+                        <span>Hire a Professional</span>
+                      </a>
+                    </div>
+                    <div className='wrap-badge'>
+                      <Badge className='badge-upgrade'>Upgrade</Badge>
+                    </div>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
             </Navbar>
           </Col>
-          <Col className='right-side'>
-            <Row>
+          <Col className='right-side h-100'>
+            <Row className='h-100'>
               <Col id="search-bar" className='w-50'>
-                <InputGroup className="mb-3">
+                <InputGroup>
                   <InputGroup.Text id="search_key">icon</InputGroup.Text>
                   <Form.Control
                     placeholder="Search for tool"

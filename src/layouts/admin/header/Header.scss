@@ -5,7 +5,15 @@
   height: $header_height;
   box-shadow: 0 1px 5px 0 rgba(41,85,115,0.21);
   .left-side {
-
+    .wrap-link, .wrap-badge {
+      margin: auto 0;
+    }
+    .badge-upgrade {
+      border-radius: 18px;
+      line-height: 16px;
+      background-color: $secondary !important;
+      color: #ffffff;
+    }
   }
   .right-side {
     #search-bar {
