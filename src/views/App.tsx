@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from 'layouts/admin/header/Header';
 import Sidebar from 'layouts/admin/sidebar/Sidebar';
-import Products from 'components/Products';
+import Products from 'components/product/Product';
 import AdminLayout from 'layouts/admin';
 
 function App() {

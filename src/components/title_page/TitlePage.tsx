@@ -1,9 +1,9 @@
 import { Col, Container, Dropdown, DropdownButton, Row } from 'react-bootstrap';
-import './styles.scss';
+import './TitlePage.scss';
 
 function TitlePage() {
   return (
-      <Container fluid className="title-page">
+      <Container fluid className="title-page py-4 px-0">
         <Row className=''>
           <Col>
               <h1>Products <span>12</span></h1>

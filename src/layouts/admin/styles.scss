@@ -4,8 +4,9 @@
   .content{
     display: flex;
     &-children {
-      height: 100%;
       width: calc(100% - 228px);
+      background-color: #ECEFF3;
+      min-height: calc(100vh - 48px);
     }
   }
 }
