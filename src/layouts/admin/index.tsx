@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import Header from 'layouts/admin/header/Header';
-import Sidebar from 'layouts/admin/Sidebar';
+import Sidebar from 'layouts/admin/sidebar/Sidebar';
 import Products from 'components/Products';
 import { ChildrenElement } from 'models/common';
 

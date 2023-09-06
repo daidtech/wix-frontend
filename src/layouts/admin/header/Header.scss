@@ -1,10 +1,18 @@
-@import '../../../assets/common/variables.scss';
+@import 'assets/styles/variables.scss';
 
 .admin-header {
   background-color: #ffffff;
   height: $header_height;
   box-shadow: 0 1px 5px 0 rgba(41,85,115,0.21);
   .left-side {
+    .header-dropdown {
+      padding: 0 4px;
+      &.active {
+        background-color: #f4fafe;
+        border-left: 1px solid #dfe5eb;
+        border-right: 1px solid #dfe5eb
+      }
+    }
     .wrap-link, .wrap-badge {
       margin: auto 0;
     }
@@ -13,9 +21,14 @@
       line-height: 16px;
       background-color: $secondary !important;
       color: #ffffff;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   .right-side {
+    display: flex;
+    justify-content: flex-end;
     #search-bar {
 
     }
@@ -23,7 +36,7 @@
       width: 1px;
       height: 18px;
       align-self: center;
-      background-color: red;
+      background-color: rgb(29, 24, 24);
       margin: 0 10px;
     }
   }

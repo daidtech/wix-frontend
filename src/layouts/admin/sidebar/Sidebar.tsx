@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.scss';
+import './Sidebar.scss';
 import Accordion from 'react-bootstrap/Accordion';
 import Subitem from 'components/Subitem'
 
