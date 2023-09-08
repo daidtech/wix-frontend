@@ -1,7 +1,7 @@
 import 'react-data-grid/lib/styles.css';
 import DataGrid from 'react-data-grid';
 import './Product.scss';
-import TitlePage from 'components/title_page/TitlePage';
+import TitlePage from 'components/TitlePage/TitlePage';
 
 const columns = [
   { key: 'id', name: 'ID' },

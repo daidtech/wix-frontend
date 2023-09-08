@@ -1,0 +1,16 @@
+.wrap-user-icon {
+  .dropdown.btn-group {
+    .wrap-con {
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      img {
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      &:hover {
+        background-color: none;
+      }
+    }
+  }
+}
