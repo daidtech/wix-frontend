@@ -9,11 +9,11 @@ import {
   Col,
   Row,
   Container,
-  Dropdown,
-  DropdownButton,
   Badge
 } from 'react-bootstrap';
 import DropDownIcon from 'components/DropdownIcon/DropdownIcon';
+import {BsSuitClub} from "react-icons/bs";
+import WrapIcon from 'components/WrapIcon/WrapIcon';
 
 function Header() {
   return (
@@ -87,6 +87,18 @@ function Header() {
                 />
               </InputGroup>
             </div>
+            <div className='divide-break'></div>
+            <WrapIcon>
+              <BsSuitClub/>
+            </WrapIcon>
+
+            <WrapIcon>
+              <BsSuitClub />
+            </WrapIcon>
+
+            <WrapIcon>
+              <BsSuitClub />
+            </WrapIcon>
             <div className='divide-break'></div>
             <DropDownIcon/>
           </Col>

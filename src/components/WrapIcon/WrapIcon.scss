@@ -1,0 +1,12 @@
+.wrap-icon {
+  width: 34px;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  .content {
+    align-items: center;
+    svg, img {
+      margin: auto 0;
+    }
+  }
+}

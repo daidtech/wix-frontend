@@ -1,9 +1,14 @@
 .wrap-user-icon {
-  .dropdown.btn-group {
-    .wrap-con {
+  .dropdown {
+    display: flex;
+    .wrap-icon {
       width: 30px;
       height: 30px;
       padding: 0;
+      margin: auto 0;
+      background: none;
+      // border-top-right-radius: ;
+      border-radius: 50%;
       img {
         max-width: 100%;
         border-radius: 15px;
