@@ -29,8 +29,26 @@
   .right-side {
     display: flex;
     justify-content: flex-end;
-    #search-bar {
-
+    .wrap-search-bar {
+      align-self: center;
+      min-width: 180px;
+      max-width: 500px;
+      width: calc(50vw - 466px);
+      margin-right: 10px;
+      border-radius: 40px;
+      .input-group {
+        height: 28px;
+        #search_key {
+          height: inherit;
+          // border-top-left-radius: 15px;
+          // border-bottom-left-radius: 15px;
+        }
+        input.form-control {
+          height: inherit;
+          // border-top-right-radius: 15px;
+          // border-bottom-right-radius: 15px;
+        }
+      }
     }
     .divide-break {
       width: 1px;

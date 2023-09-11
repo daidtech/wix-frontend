@@ -79,9 +79,11 @@ function Header() {
           <Col className='right-side h-100'>
             <div className='wrap-search-bar'>
               <InputGroup>
-                <InputGroup.Text id='search_key'>icon</InputGroup.Text>
+                <InputGroup.Text id='search_key'>
+                  <BsSuitClub />
+                </InputGroup.Text>
                 <Form.Control
-                  placeholder='Search for tool'
+                  placeholder='Search for tool, apps, help & more...'
                   aria-label='search_key'
                   aria-describedby='search_key'
                 />
