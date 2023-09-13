@@ -20,13 +20,13 @@ const rows = [
   { id: 6, name:6, type: 'Example', sku: 'Example', price: 'Example6', inventory: 'Example' },
 ];
 
-function Products() {
+function Edit() {
   return (
-    <div className='products-page'>
+    <div className='edit-product'>
       <TitlePage></TitlePage>
-      <DataGrid className='products-grid' columns={columns} rows={rows} />
+      <h1>Edit product</h1>
     </div>
   )
 }
 
-export default Products;
+export default Edit;

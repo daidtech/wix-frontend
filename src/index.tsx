@@ -8,10 +8,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Dashboard from 'views/Dashboard/Dashboard';
+import ProductList from 'views/Products/ProductList';
+import ProductEdit from 'views/Products/ProductEdit';
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Dashboard />,
+  },
+  {
+    path: "/products",
+    element: <ProductList />,
+  },  {
+    path: "/products/edit",
+    element: <ProductEdit />,
   },
 ]);
 
