@@ -1,5 +1,6 @@
 import { Col, Container, Dropdown, DropdownButton, Row } from 'react-bootstrap';
 import './TitlePage.scss';
+import { BsSuitClub } from 'react-icons/bs';
 
 function TitlePage() {
   return (
@@ -8,12 +9,12 @@ function TitlePage() {
           <Col>
               <h1>Products <span>12</span></h1>
           </Col>
-          <Col className="action justify-content-end">
-            <div className="d-flex">
+          <Col className="action">
+            <div className="d-flex justify-content-end">
               <DropdownButton
                 align="end"
                 title="More Action"
-                id="dropdown-menu-align-end"
+                className='action-more-action round'
               >
                 <Dropdown.Item eventKey="1">Action</Dropdown.Item>
                 <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
@@ -23,8 +24,8 @@ function TitlePage() {
               </DropdownButton>
               <DropdownButton
                 align="end"
-                title="New Product"
-                id="dropdown-menu-align-end"
+                title={<div><BsSuitClub />"New Product"</div>}
+                className='action-new-product'
               >
                 <Dropdown.Item eventKey="1">Action</Dropdown.Item>
                 <Dropdown.Item eventKey="2">Another action</Dropdown.Item>

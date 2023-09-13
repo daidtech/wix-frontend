@@ -1,2 +1,21 @@
+@import 'assets/styles/variables.scss';
+
 .title-page {
+  .action-more-action, .action-new-product {
+    button {
+      padding:0 23px;
+      height: 34px;
+      border-radius: 15px;
+      line-height: 24px;
+      font-weight: 530;
+    }
+  }
+  .action-more-action {
+    margin-right: 12px;
+    button.btn-primary {
+      background-color: #ffffff !important;
+      color: $primary;
+      border-color: $--wsr-color-B40;
+    }
+  }
 }
