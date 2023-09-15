@@ -1,30 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import App from './views/App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Dashboard from 'views/Dashboard/Dashboard';
-import ProductList from 'views/Products/ProductList';
-import ProductEdit from 'views/Products/ProductEdit';
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Dashboard />,
-  },
-  {
-    path: "/products",
-    element: <ProductList />,
-  },  {
-    path: "/products/edit",
-    element: <ProductEdit />,
-  },
-]);
+import { RouterProvider } from "react-router-dom";
+import router from './routers';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

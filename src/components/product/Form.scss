@@ -1,0 +1,29 @@
+.product-form {
+  .wrap-page {
+    position: relative;
+    .hero-header {
+      height: 170px;
+      background-image: linear-gradient(257deg,#ebdce1,#aae0eb 71%,#ece1d8);
+    }
+    .wrap-content {
+      position: absolute;
+      top: 130px;
+      width: 100%;
+      .content {
+        .image-and-video {
+          height: 200px;
+          background: red;
+        }
+        .image-and-video-2 {
+          background: green;
+          height: 200px;
+
+        }
+        .content-section {
+          height: 150px;
+          background: blue;
+        }
+      }
+    }
+  }
+}

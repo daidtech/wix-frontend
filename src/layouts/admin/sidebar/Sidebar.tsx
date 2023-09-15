@@ -10,7 +10,7 @@ function Sidebar() {
         <Accordion.Item eventKey="0">
           <Accordion.Header>Store Products</Accordion.Header>
           <Accordion.Body>
-            <Subitem link={'google.com'}> Products </Subitem>
+            <Subitem link={'/products'}> Products </Subitem>
             <Subitem link={'google.com'}> Inventory </Subitem>
           </Accordion.Body>
         </Accordion.Item>
