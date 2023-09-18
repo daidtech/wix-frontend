@@ -1,8 +1,8 @@
+import { ReactElement } from 'react';
 import './WrapIcon.scss';
-import { ChildrenElement } from 'models/common';
 
 interface WrapIconProps {
-  children: ChildrenElement
+  children: ReactElement
 }
 function WrapIcon({children}:  WrapIconProps) {
   return (

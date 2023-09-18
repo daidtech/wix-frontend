@@ -1,9 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import './styles.scss'
 
 interface SubitemProps {
   link: string,
-  children: string | JSX.Element | JSX.Element[],
+  children: ReactElement | string
 }
 
 function Subitem({link, children}: SubitemProps) {

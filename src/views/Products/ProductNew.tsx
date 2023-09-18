@@ -1,4 +1,4 @@
-import Form from 'components/Product/Form';
+import Form from 'components/Product/ProductForm';
 import AdminLayout from 'layouts/admin';
 
 function ProductEdit() {

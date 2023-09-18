@@ -1,9 +1,11 @@
 import 'react-data-grid/lib/styles.css';
-import './Form.scss';
+import './ProductForm.scss';
 import { Col, Container, Row, FormCheck } from 'react-bootstrap';
-import TitleBlock from 'components/TitleBlock/TitleBlock';
+import TitleBlock from 'components/Commons/CustomCard/TitleBlock/TitleBlock';
+import CustomCard from 'components/Commons/CustomCard/CustomCard';
+import CustomFileInput from 'components/Commons/CustomFileInput/CustomFilesInput';
 
-function Form() {
+function ProductForm() {
   return (
     <div className='product-form'>
       <div className="wrap-page">
@@ -16,8 +18,12 @@ function Form() {
               <Row>
                 <Col xs={8}>
                   <div className="image-and-video rounded">
-                    <TitleBlock/>
-                    <div className="break-line"></div>
+                    <CustomCard>
+                      <div className='d-flex'>
+                        <CustomFileInput/>
+                        <CustomFileInput/>
+                      </div>
+                    </CustomCard>
                   </div>
                 </Col>
                 <Col>
@@ -46,4 +52,4 @@ function Form() {
   )
 }
 
-export default Form;
+export default ProductForm;

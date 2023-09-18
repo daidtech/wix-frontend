@@ -1,4 +1,4 @@
-import { Dropdown, ButtonGroup, Button } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 import './DropdownIcon.scss';
 
 function DropdownIcon() {

@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import './styles.scss';
 import Header from 'layouts/admin/Header/Header';
 import Sidebar from 'layouts/admin/Sidebar/Sidebar';
 import Products from 'components/Product/Product';
-import { ChildrenElement } from 'models/common';
 
 interface AdminLayoutProps {
-  children: ChildrenElement
+  children: ReactElement
 }
 
 function AdminLayout({children}: AdminLayoutProps) {

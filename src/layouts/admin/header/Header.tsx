@@ -11,9 +11,9 @@ import {
   Container,
   Badge
 } from 'react-bootstrap';
-import DropDownIcon from 'components/DropdownIcon/DropdownIcon';
+import DropDownIcon from 'components/Commons/DropdownIcon/DropdownIcon';
 import {BsSuitClub} from "react-icons/bs";
-import WrapIcon from 'components/WrapIcon/WrapIcon';
+import WrapIcon from 'components/Commons/WrapIcon/WrapIcon';
 
 function Header() {
   return (
