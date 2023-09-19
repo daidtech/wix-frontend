@@ -17,17 +17,15 @@ function ProductForm() {
             <Container>
               <Row>
                 <Col xs={8}>
-                  <div className="image-and-video rounded">
-                    <CustomCard>
-                      <div className='d-flex'>
-                        <CustomFileInput/>
-                        <CustomFileInput/>
-                      </div>
-                    </CustomCard>
-                  </div>
+                  <CustomCard title='Images and videos'>
+                    <div className='d-flex'>
+                      <CustomFileInput/>
+                      <CustomFileInput/>
+                    </div>
+                  </CustomCard>
                 </Col>
                 <Col>
-                  <div className="content-section rounded g-box">
+                  <CustomCard title='Categories'>
                     <FormCheck // prettier-ignore
                       type={'checkbox'}
                       label={`Show in online store`}
@@ -36,11 +34,13 @@ function ProductForm() {
                       type={'checkbox'}
                       label={`Show in Point of Sale`}
                     />
-                  </div>
-                  <div className="categories rounded g-box">
-                    <TitleBlock/>
-                    <div className="break-line"></div>
-                  </div>
+                  </CustomCard>
+                  <CustomCard title='Categories'>
+                    <div className='d-flex'>
+                      <CustomFileInput/>
+                      <CustomFileInput/>
+                    </div>
+                  </CustomCard>
                 </Col>
               </Row>
             </Container>

@@ -2,10 +2,12 @@
 
 .sidebar {
   width: $sidebar_width;
-  height: calc(100vh - 48px);
+  height: 100vh;
   color: white;
   background-color: black;
   display: inline-block;
+  position: fixed;
+  z-index: 10;
   .accordion {
     .accordion-item {
       border-radius: 0;

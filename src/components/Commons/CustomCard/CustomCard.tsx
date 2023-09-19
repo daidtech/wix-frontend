@@ -4,15 +4,17 @@ import React, { ReactElement } from "react";
 import { ChildrenElement } from 'models/common';
 
 interface CustomCardProps {
-  children: ReactElement | string | ChildrenElement
+  children: ReactElement | string | ChildrenElement,
+  title?: string
 }
 
-function CustomCard({children}: CustomCardProps) {
+function CustomCard({children, title}: CustomCardProps) {
   return (
-    <div className="custom-card">
-      <TitleBlock/>
-      <div className="break-line"></div>
-      {children}
+    <div className="rounded custom-card">
+      {title ? <TitleBlock title={title}/> : <></>}
+      <div className="custom-card-body">
+        {children}
+      </div>
     </div>
   )
 }

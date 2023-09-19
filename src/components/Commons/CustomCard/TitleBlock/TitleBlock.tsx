@@ -1,9 +1,14 @@
 import './TitleBlock.scss';
 
-function TitleBlock() {
+interface TitleBlockProps {
+  title?: string
+}
+
+function TitleBlock({title= ''}: TitleBlockProps) {
   return (
     <div className="title-block">
-      <h4 className='title'>Images and videos</h4>
+      <h4 className='title'>{title}</h4>
+      <div className="break-line"></div>
     </div>
   )
 }
