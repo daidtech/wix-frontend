@@ -6,8 +6,7 @@
   box-shadow: 0 1px 5px 0 rgba(41,85,115,0.21);
   position: fixed;
   z-index: 10;
-  left: $sidebar_width;
-  width: calc(100vw - 228px);
+  width: 100vw;
   .left-side {
     .header-dropdown {
       padding: 0 4px;

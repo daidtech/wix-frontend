@@ -4,9 +4,10 @@
   .content{
     display: flex;
     &-children {
+      margin-top: $header_height;
       width: calc(100% - 228px);
       background-color: #ECEFF3;
-      min-height: calc(100vh - 48px);
+      min-height: 100vh;
       margin-left: $sidebar_width;
     }
   }

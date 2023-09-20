@@ -3,6 +3,7 @@ import Dashboard from 'views/Dashboard/Dashboard';
 import ProductList from 'views/Products/ProductList';
 import ProductEdit from 'views/Products/ProductEdit';
 import ProductNew from "views/Products/ProductNew";
+import SignupForm from "views/SignUp/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/products/new",
     element: <ProductNew />,
+  },
+  {
+    path: "/users/sign-up",
+    element: <SignupForm />,
   },
 ]);
 export default router;

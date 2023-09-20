@@ -1,13 +1,14 @@
 @import 'assets/styles/variables.scss';
 
 .sidebar {
+  position: fixed;
+  z-index: 10;
   width: $sidebar_width;
-  height: 100vh;
+  top: $header_height;
+  height: calc(100vh - 48px);
   color: white;
   background-color: black;
   display: inline-block;
-  position: fixed;
-  z-index: 10;
   .accordion {
     .accordion-item {
       border-radius: 0;
