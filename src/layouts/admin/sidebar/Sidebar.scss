@@ -9,11 +9,13 @@
   color: white;
   background-color: black;
   display: inline-block;
-  .accordion {
-    .accordion-item {
+  .sidebar-accordion {
+    .accordion-header {
       border-radius: 0;
       .accordion-button {
         border-radius: 0;
+        background-color: $sidebar_background;
+        color: white;
       }
     }
     .accordion-body {
