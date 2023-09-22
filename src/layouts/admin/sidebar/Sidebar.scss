@@ -6,16 +6,56 @@
   width: $sidebar_width;
   top: $header_height;
   height: calc(100vh - 48px);
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  outline-color: rgb(207, 208, 210);
+  background-color: #131720;
   display: inline-block;
+  header {
+    background-color: aquamarine;
+    button {
+      width: 100%;
+      padding: 0 20px 0 20px;
+      border: 0;
+      background-color: #131720;
+      outline-color: rgb(207, 208, 210);
+      color: #ffffff;
+      .progress-bar-content {
+        margin: 7px 0;
+        padding: 9px 0;
+        a.side-bar-progress-title {
+          color: #ffffff;
+          text-decoration: none;
+          line-height: 20px;
+          white-space: pre-line;
+          text-align: left;
+          font-family: "Helvetica Neue",Helvetica,Arial,"\30E1\30A4\30EA\30AA","meiryo","\30D2\30E9\30AE\30CE\89D2\30B4 pro w3","hiragino kaku gothic pro", sans-serif;
+          font-size: 14px;
+          font-weight:  700;
+        }
+        .wrap-progress-bar {
+          padding: 4px 0;
+          .progress {
+            border-radius: 2px;
+            height: 4px;
+          }
+        }
+        .side-bar-progress-text {
+          line-height: 16px;
+          font-weight: 400;
+          font-size: 12px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .sidebar-header
   .sidebar-accordion {
     .accordion-header {
       border-radius: 0;
       .accordion-button {
         border-radius: 0;
-        background-color: $sidebar_background;
-        color: white;
+        background-color: #131720;
+        color: #ffffff;
       }
     }
     .accordion-body {
