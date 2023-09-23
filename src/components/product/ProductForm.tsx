@@ -26,7 +26,7 @@ function ProductForm() {
                   </CustomCard>
                   <CustomCard title='Product info'>
                     <h3>BASIC INFO</h3>
-                    <Container>
+                    <Container className='px-0'>
                       <Row>
                         <Col xs={8}>
                           <FormTextInput

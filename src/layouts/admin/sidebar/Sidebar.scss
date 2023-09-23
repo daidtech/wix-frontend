@@ -48,7 +48,6 @@
       }
     }
   }
-  .sidebar-header
   .sidebar-accordion {
     .accordion-header {
       border-radius: 0;
@@ -56,6 +55,16 @@
         border-radius: 0;
         background-color: #131720;
         color: #ffffff;
+        &:not(.collapsed)::after, &::after {
+          filter: invert(92%) sepia(6%) saturate(61%) hue-rotate(182deg) brightness(93%) contrast(84%);
+        }
+        &:not(.collapsed) {
+          box-shadow: none;
+        }
+        &:focus {
+          border-color: #131720;
+          box-shadow: unset;
+        }
       }
     }
     .accordion-body {

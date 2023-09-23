@@ -1,11 +1,13 @@
-import React from 'react';
 import './Sidebar.scss';
 import Accordion from 'react-bootstrap/Accordion';
-import Subitem from 'components/Subitem'
+import Subitem from 'components/Subitem/Subitem'
 import { BsChevronRight } from 'react-icons/bs';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { useLocation } from 'react-router-dom';
 
 function Sidebar() {
+  const location = useLocation();
+
   return (
     <div className='sidebar'>
       <header>
@@ -25,10 +27,15 @@ function Sidebar() {
         </button>
       </header>
       <Accordion defaultActiveKey="0">
+
         <Accordion.Item bsPrefix="sidebar-accordion" eventKey="0">
           <Accordion.Header>Store Products</Accordion.Header>
           <Accordion.Body>
-            <Subitem link={'/products'}> Products </Subitem>
+            <Subitem
+              link={'/products'}
+              className={location.pathname = '/products' ? 'active' : ''}>
+              Products
+            </Subitem>
             <Subitem link={'google.com'}> Inventory </Subitem>
           </Accordion.Body>
         </Accordion.Item>
