@@ -1,6 +1,22 @@
+@import 'assets/styles/variables.scss';
 .products-page {
   padding: 0 44px !important;
   margin: 0 48px !important;
+  .action-new-product {
+    .dropdown-menu-end {
+    }
+    .dropdown-item {
+      padding: 6px 24px  6px 18px ;
+      .item-description {
+        line-height: 18px;
+        font-weight: 400;
+        color: #7A92A5;
+        font-size: $front_size_small;
+        text-wrap: wrap;
+        max-width: 170px;
+      }
+    }
+  }
   .products-grid {
 
   }

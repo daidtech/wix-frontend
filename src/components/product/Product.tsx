@@ -2,6 +2,8 @@ import 'react-data-grid/lib/styles.css';
 import DataGrid from 'react-data-grid';
 import './Product.scss';
 import TitlePage from 'components/TitlePage/TitlePage';
+import { Dropdown, DropdownButton } from 'react-bootstrap';
+import { BsFillBookmarkPlusFill } from 'react-icons/bs';
 
 const columns = [
   { key: 'name', name: 'Name' },
@@ -23,7 +25,33 @@ const rows = [
 function Products() {
   return (
     <div className='products-page'>
-      <TitlePage></TitlePage>
+      <TitlePage title='Products' badge='12'>
+        <DropdownButton
+          align="end"
+          title="More Action"
+          className='action-more-action round'
+        >
+        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+        <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+      </DropdownButton>
+      <DropdownButton
+        align="end"
+        title={<div><BsFillBookmarkPlusFill />"New Product"</div>}
+        className='action-new-product'
+      >
+        <Dropdown.Item eventKey="5" onClick={() => {}}>
+          <h6>Physical product</h6>
+          <span className='item-description'>e.g., t-shirt, shoes, or skateboard</span>
+        </Dropdown.Item>
+        <Dropdown.Item eventKey="6">
+          <h6>Digital file</h6>
+          <span className='item-description'>e.g., eBook, printable, or digital album</span>
+        </Dropdown.Item>
+      </DropdownButton>
+      </TitlePage>
       <DataGrid className='products-grid' columns={columns} rows={rows} />
     </div>
   )
