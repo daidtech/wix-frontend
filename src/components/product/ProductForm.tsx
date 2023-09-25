@@ -1,12 +1,18 @@
 import 'react-data-grid/lib/styles.css';
 import './ProductForm.scss';
 import { Col, Container, Row, FormCheck, Button } from 'react-bootstrap';
-import TitleBlock from 'components/Commons/CustomCard/TitleBlock/TitleBlock';
 import CustomCard from 'components/Commons/CustomCard/CustomCard';
 import CustomFileInput from 'components/Commons/CustomFileInput/CustomFilesInput';
 import FormTextInput from 'components/Commons/FormTextInput/FormTextInput';
+import { useState } from 'react';
+import ReactQuill from 'react-quill';
+import WrapIcon from 'components/Commons/WrapIcon/WrapIcon';
+import { BsFillBookmarkPlusFill } from 'react-icons/bs';
 
 function ProductForm() {
+  const [value, setValue] = useState('');
+
+
   return (
     <div className='product-form'>
       <div className="wrap-page">
@@ -17,7 +23,7 @@ function ProductForm() {
           <div className="content">
             <Container>
               <Row>
-                <Col xs={8}>
+                <Col xs={8} className='left-side'>
                   <CustomCard title='Images and videos'>
                     <div className='d-flex'>
                       <CustomFileInput/>
@@ -43,26 +49,57 @@ function ProductForm() {
                             />
                         </Col>
                       </Row>
+                      <Row className='my-4 description'>
+                        <Col xs={6}>
+                        <label>Description</label>
+                        </Col>
+                        <Col xs={6} className='text-end'>
+                          <Button className='mb-2'>Generate AI Text</Button>
+                        </Col>
+                        <Col>
+                          <ReactQuill className='description-editor' theme="snow" value={value} onChange={setValue} />
+                        </Col>
+                      </Row>
                     </Container>
                   </CustomCard>
                 </Col>
-                <Col>
+                <Col className='right-side'>
                   <CustomCard>
-                    <FormCheck // prettier-ignore
+                    <FormCheck
                       type={'checkbox'}
                       label={`Show in online store`}
                     />
-                    <FormCheck // prettier-ignore
+                    <FormCheck
                       type={'checkbox'}
                       label={`Show in Point of Sale`}
                     />
                   </CustomCard>
                   <CustomCard title='Categories'>
-                    <FormCheck // prettier-ignore
+                    <FormCheck
                       type={'checkbox'}
                       label={`Show in online store`}
                     />
                     <Button variant="link" className='p-0 create-category-btn'>+ Create Category</Button>
+                  </CustomCard>
+                  <CustomCard title='Categories'>
+                    <Button variant="link" className='p-0 my-2 d-flex'>
+                      <WrapIcon className='m-auto'>
+                        <BsFillBookmarkPlusFill/>
+                      </WrapIcon>
+                      <span>Create coupon</span>
+                    </Button>
+                    <Button variant="link" className='p-0 my-2 d-flex'>
+                      <WrapIcon className='m-auto'>
+                        <BsFillBookmarkPlusFill/>
+                      </WrapIcon>
+                      <span>Promote this product</span>
+                    </Button>
+                    <Button variant="link" className='p-0 my-2 d-flex'>
+                      <WrapIcon className='m-auto'>
+                        <BsFillBookmarkPlusFill/>
+                      </WrapIcon>
+                      <span>Edit SEO settings</span>
+                    </Button>
                   </CustomCard>
                 </Col>
               </Row>

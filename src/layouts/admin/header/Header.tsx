@@ -12,7 +12,7 @@ import {
   Badge
 } from 'react-bootstrap';
 import DropDownIcon from 'components/Commons/DropdownIcon/DropdownIcon';
-import {BsSuitClub} from "react-icons/bs";
+import {BsFillBookmarkPlusFill} from "react-icons/bs";
 import WrapIcon from 'components/Commons/WrapIcon/WrapIcon';
 
 function Header() {
@@ -80,7 +80,7 @@ function Header() {
             <div className='wrap-search-bar'>
               <InputGroup>
                 <InputGroup.Text id='search_key'>
-                  <BsSuitClub />
+                  <BsFillBookmarkPlusFill />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder='Search for tool, apps, help & more...'
@@ -91,15 +91,15 @@ function Header() {
             </div>
             <div className='divide-break'></div>
             <WrapIcon>
-              <BsSuitClub/>
+              <BsFillBookmarkPlusFill/>
             </WrapIcon>
 
             <WrapIcon>
-              <BsSuitClub />
+              <BsFillBookmarkPlusFill />
             </WrapIcon>
 
             <WrapIcon>
-              <BsSuitClub />
+              <BsFillBookmarkPlusFill />
             </WrapIcon>
             <div className='divide-break'></div>
             <DropDownIcon/>

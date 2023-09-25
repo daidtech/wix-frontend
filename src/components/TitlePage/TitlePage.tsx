@@ -1,6 +1,6 @@
 import { Col, Container, Dropdown, DropdownButton, Row } from 'react-bootstrap';
 import './TitlePage.scss';
-import { BsSuitClub } from 'react-icons/bs';
+import { BsFillBookmarkPlusFill } from 'react-icons/bs';
 
 function TitlePage() {
   return (
@@ -24,7 +24,7 @@ function TitlePage() {
               </DropdownButton>
               <DropdownButton
                 align="end"
-                title={<div><BsSuitClub />"New Product"</div>}
+                title={<div><BsFillBookmarkPlusFill />"New Product"</div>}
                 className='action-new-product'
               >
                 <Dropdown.Item eventKey="1">Action</Dropdown.Item>

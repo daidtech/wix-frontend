@@ -10,9 +10,18 @@
       top: 130px;
       width: 100%;
       .content {
-        .content-section {
-          height: 150px;
-          background: rgb(153, 179, 153);
+        .left-side {
+          .description {
+            .description-editor {
+              .ql-editor {
+                min-height: 115px;
+                max-height: 215px;
+              }
+            }
+          }
+        }
+        .right-side {
+
         }
       }
     }

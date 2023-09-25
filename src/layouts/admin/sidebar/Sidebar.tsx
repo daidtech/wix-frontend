@@ -36,14 +36,14 @@ function Sidebar() {
               className={location.pathname = '/products' ? 'active' : ''}>
               Products
             </Subitem>
-            <Subitem link={'google.com'}> Inventory </Subitem>
+            <Subitem link={'#'}> Inventory </Subitem>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item bsPrefix="sidebar-accordion" eventKey="1">
           <Accordion.Header>Orders</Accordion.Header>
           <Accordion.Body>
-            <Subitem link={'google.com'}> Orders </Subitem>
-            <Subitem link={'google.com'}> Abandoned Carts </Subitem>
+            <Subitem link={'#'}> Orders </Subitem>
+            <Subitem link={'#'}> Abandoned Carts </Subitem>
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

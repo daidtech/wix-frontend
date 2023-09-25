@@ -2,11 +2,12 @@ import { ReactElement } from 'react';
 import './WrapIcon.scss';
 
 interface WrapIconProps {
-  children: ReactElement
+  children: ReactElement,
+  className?: string
 }
-function WrapIcon({children}:  WrapIconProps) {
+function WrapIcon({children, className=''}:  WrapIconProps) {
   return (
-    <div className='wrap-icon'>
+    <div className={`wrap-icon ${className}`}>
       <div className="content">
         {children}
       </div>
