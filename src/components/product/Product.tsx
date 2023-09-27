@@ -42,11 +42,11 @@ function Products() {
         title={<div><BsFillBookmarkPlusFill />"New Product"</div>}
         className='action-new-product'
       >
-        <Dropdown.Item eventKey="5" onClick={() => {}}>
+        <Dropdown.Item eventKey="1" href="/products/new" >
           <h6>Physical product</h6>
           <span className='item-description'>e.g., t-shirt, shoes, or skateboard</span>
         </Dropdown.Item>
-        <Dropdown.Item eventKey="6">
+        <Dropdown.Item eventKey="2">
           <h6>Digital file</h6>
           <span className='item-description'>e.g., eBook, printable, or digital album</span>
         </Dropdown.Item>
